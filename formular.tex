@@ -1,22 +1,40 @@
-\documentclass{article}
+\documentclass[a4paper]{scrlttr2}
 
 \usepackage{hyperref}
+\usepackage[ngerman]{babel}
 
 \begin{document}
+
+\setkomavar{fromname}{Name des Vereins}
+\setkomavar{fromaddress}{Adresse des Vereins\\Postleitzahl und Ort des Vereins}
+\setkomavar{fromphone}{Telefonnummer des Vereins}
+\setkomavar{fromemail}{E-Mail-Adresse des Vereins}
+
+\begin{letter}{%
+Name des Mitglieds\\
+Adresse des Mitglieds\\
+Postleitzahl und Ort des Mitglieds
+}
+
+\setkomavar{subject}{Vereinsbeitritt}
+
+\opening{Sehr geehrte Damen und Herren,}
+
+wir freuen uns, dass Sie Interesse an einem Beitritt zu unserem Verein haben. 
+
+Bitte füllen Sie das beigefügte Beitrittsformular aus und senden es uns unterschrieben zurück.
+
+Mit freundlichen Grüßen,
+
+\closing{Name des Vereins}
+
+\end{letter}
 
 \begin{center}
 \Large\textbf{Vereinsbeitrittsformular}
 \end{center}
 
-\begin{center}
-\textbf{Name des Vereins}
-\end{center}
-
-\begin{center}
-\textbf{Name des Mitglieds}
-\end{center}
-
-\begin{tabular}{p{3cm} p{9cm}}
+\begin{tabular}{p{4.5cm} p{11cm}}
 \textbf{Vor- und Nachname:} & \\
 \textbf{Adresse:} & \\
 \textbf{Postleitzahl und Ort:} & \\
@@ -28,20 +46,9 @@
 \textbf{Ich möchte dem Verein beitreten und versichere, dass ich die Satzung des Vereins akzeptiere.}
 \end{center}
 
-\begin{tabular}{p{3cm} p{9cm}}
+\begin{tabular}{p{4.5cm} p{11cm}}
 \textbf{Unterschrift:} & \\
 \textbf{Datum:} & \\
 \end{tabular}
-
-\begin{center}
-\textbf{Bitte senden Sie das ausgefüllte Formular an:}
-\end{center}
-
-\begin{center}
-\textbf{Name des Vereins} \\
-\textbf{Adresse des Vereins} \\
-\textbf{Postleitzahl und Ort des Vereins} \\
-\textbf{E-Mail-Adresse des Vereins}
-\end{center}
 
 \end{document}
